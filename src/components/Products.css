@@ -1,0 +1,138 @@
+.products {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  background: transparent;
+  border: none;
+  color: var(--secondary-text);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 200ms ease;
+}
+
+.filter-tab::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 200ms ease;
+}
+
+.filter-tab:hover {
+  color: var(--accent-color);
+}
+
+.filter-tab.active {
+  color: var(--accent-color);
+}
+
+.filter-tab.active::after {
+  width: 100%;
+}
+
+.plugins-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.plugin-card {
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms ease;
+  animation: slideUp 500ms ease-out;
+}
+
+.plugin-card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 217, 255, 0.15);
+}
+
+.plugin-card h3 {
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.plugin-description {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.plugin-industries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.industry-badge {
+  background-color: rgba(0, 217, 255, 0.1);
+  color: var(--accent-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 2px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.plugin-card .btn-outline {
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+  .plugins-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .plugins-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products {
+    padding: 60px 0;
+  }
+
+  .filter-tabs {
+    gap: 0.75rem;
+  }
+
+  .plugin-card {
+    padding: 1.5rem;
+  }
+}
