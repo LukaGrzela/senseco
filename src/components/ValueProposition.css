@@ -25,7 +25,7 @@
 
 .value-card:hover {
   border-color: var(--accent-color);
-  box-shadow: 0 8px 32px rgba(0, 217, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
 }
 
 .value-icon {

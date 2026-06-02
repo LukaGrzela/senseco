@@ -1,11 +1,12 @@
 .header {
   position: sticky;
   top: 0;
-  background-color: rgba(15, 15, 15, 0.95);
+  background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
   z-index: 100;
   padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.05);
 }
 
 .header-content {
@@ -17,7 +18,7 @@
 .logo-text {
   font-size: 1.5rem;
   margin: 0;
-  background: linear-gradient(90deg, var(--accent-color), #00B8CC);
+  background: linear-gradient(90deg, #7C3AED, #A78BFA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

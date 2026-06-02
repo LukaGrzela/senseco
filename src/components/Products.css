@@ -70,7 +70,7 @@
 .plugin-card:hover {
   border-color: var(--accent-color);
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 217, 255, 0.15);
+  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.15);
 }
 
 .plugin-card h3 {
@@ -98,7 +98,7 @@
 }
 
 .industry-badge {
-  background-color: rgba(0, 217, 255, 0.1);
+  background-color: rgba(124, 58, 237, 0.1);
   color: var(--accent-color);
   padding: 0.25rem 0.75rem;
   border-radius: 2px;

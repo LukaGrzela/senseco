@@ -5,12 +5,12 @@
 }
 
 :root {
-  --primary-bg: #0F0F0F;
-  --accent-color: #00D9FF;
-  --neutral-text: #E0E0E0;
-  --secondary-text: #A0A0A0;
-  --border-color: #1A1A1A;
-  --modal-bg: rgba(0, 0, 0, 0.8);
+  --primary-bg: #FFFFFF;
+  --accent-color: #7C3AED;
+  --neutral-text: #1E293B;
+  --secondary-text: #64748B;
+  --border-color: #F1F5F9;
+  --modal-bg: rgba(255, 255, 255, 0.95);
 }
 
 body {
@@ -23,6 +23,7 @@ body {
   color: var(--neutral-text);
   line-height: 1.6;
   font-size: 16px;
+  box-shadow: inset 0 0 0 1px #F1F5F9;
 }
 
 html {
@@ -82,8 +83,9 @@ button {
 }
 
 .btn-primary:hover {
-  background-color: #00B8CC;
+  background-color: #6D28D9;
   transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
 }
 
 .btn-outline {
@@ -98,9 +100,9 @@ button {
 }
 
 .btn-outline:hover {
-  background-color: rgba(0, 217, 255, 0.1);
-  border-color: #00B8CC;
-  color: #00B8CC;
+  background-color: rgba(124, 58, 237, 0.1);
+  border-color: #6D28D9;
+  color: #6D28D9;
 }
 
 /* Focus states */

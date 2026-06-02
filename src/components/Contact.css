@@ -37,7 +37,7 @@ label {
 input,
 textarea,
 select {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #F8FAFC;
   border: 1px solid var(--border-color);
   color: var(--neutral-text);
   padding: 0.75rem 1rem;
@@ -52,8 +52,8 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--accent-color);
-  background-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 3px rgba(0, 217, 255, 0.1);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
 }
 
 input::placeholder,
@@ -75,7 +75,7 @@ textarea {
 }
 
 .form-message.success {
-  background-color: rgba(0, 217, 255, 0.1);
+  background-color: rgba(124, 58, 237, 0.1);
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
